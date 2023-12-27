@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>To do List</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body onload="addTask.style.visibility='hidden';
+    addBtn.style.visibility='hidden';
+    completeItemDiv.style.visibility='hidden';">
+    <div class="to-do-list-div">
+        <fieldset style="border:none;">
+            <div class="header-div">
+                <center> <h1 style="color:#FDF0F0">To Do List</h1><br></center>
+            </div>
+            <div class="add_task_btn_div">
+                <button onclick="add_task_btn();" class="add_task_btn">Add Task</button><br><br>             
+            </div>
+            <div class="add_item_div">
+                <div class="item_text_div"> 
+                    <input type="text" onchange="add_task();" id="add_task" class="add_task">
+                </div>
+                <div class="add_btn-div">
+                    <button onclick="add_task();" id="add_btn" class="add_btn">Add</button>
+                    
+                </div>
+                <div class="complete-item" id="completeItemDiv">
+                     <legend>Completed Task</legend>
+                     <ul id="complete-list">
+
+                     </ul>
+                     </div>
+            </div>
+            
+   
+            <ul id="task-list">
+    </ul>
+</fieldset>
+</div>
+    </body>
+    <script src="script.js">
+       
+           </script> 
+</html>
